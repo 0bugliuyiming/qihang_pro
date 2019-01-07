@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.wrapper{
+    width: 80%;
+    height: 200rem;
+    background-color: lightblue;
+    margin: 0px auto;
+}
+.heading{
+    margin: 0px auto;
+    width: 100%;
+    height: 40rem;
+    background-color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.heading_title{
+    float: left;
+    font-size: 1.2rem;
+}
+
+.heading_note{
+    float: right;
+    width: 12.5rem;
+    text-align: right;
+    background-image: url("../img/tip.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+.heading_note .timetip{
+    color: #828282;
+    font-family: 黑体;
+    font-size: 1rem;
+ }
+
+.heading_note .phone{
+    color: #F4A500;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
