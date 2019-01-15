@@ -69,7 +69,6 @@ i{
 .header-index-download:hover ul{
     display: block;
 }
-
 .header-index .dropdown-list::after {
     content: '';
     width: 0;
@@ -325,28 +324,6 @@ i{
     margin-top: -230px;
     box-shadow: 0 0 5px #CCC;
 }
-#login_close{
-    display: block;
-    position: absolute;
-    top: 1px;
-    right: 1px;
-    width: 47px;
-    height: 28px;
-    z-index: 10;
-    text-align: center;
-    line-height: 28px;
-    color: #b1b1b1;
-    border-left: 1px solid #b1b1b1;
-}
-.icon-font::before{
-    content: "\f11d";
-}
-.icon-font{
-    font-family: webfont;
-    text-transform: none;
-    font-size: 16px;
-    position: relative;
-}
 .login-tab .enter-title{
     position: relative;
     height: 50px;
@@ -357,7 +334,7 @@ i{
     text-align: center;
 }
 .login-tab .enter-content {
-    padding-top: 60px;
+    padding-top: 30px;
 }
 .login-tab .content-avatar {
     width: 100%;
@@ -372,11 +349,9 @@ i{
     background-image: url("../img/ke_qq/empty-avator.png");
     background-repeat: no-repeat;
 }
-.content-inputs table{
+.content-inputs div{
+    width: 294px;
     margin: 0 auto;
-}
-.content-inputs table th{
-    text-align: right;
 }
 .login-btn-wrap{
     margin-top: 30px;
@@ -407,4 +382,83 @@ i{
 }
 .float-right{
     float: right;
+}
+.sign-up{
+    width: 322px;
+    height: 372px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -224px;
+    margin-top: -240px;
+    background-color: #fff;
+    box-shadow: 0px 0px 46px rgba(80,131,207,0.13);
+    border: 1px solid #f4f7fc;
+    border-radius: 5px;
+    padding: 63px 63px 45px;
+    font-family: 'Microsoft YaHei';
+    display: none;
+}
+.sign-up h2{
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+.form-group{
+    padding: 15px;
+    position: relative;
+}
+.input-css {
+    width: 294px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    background-color: #f2f2f5;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.view_icon {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 40px;
+    height: 40px;
+    background: url(../img/ke_qq/view_icon.png) center center no-repeat;
+    background-size: contain;
+    display: block;
+    cursor: pointer;
+}
+.btn-group {
+    padding: 15px;
+}
+.btn-group .sign-up-btn {
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    width: 294px;
+    height: 40px;
+    line-height: 38px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: url("../img/ke_qq/login_bg.png");
+    background-size: cover;
+    opacity: 1;
+    transition: opacity ease-in-out .5s;
+}
+.btn-group .sign-up-btn span{
+    letter-spacing: 40px;
+    margin-left: 40px;
+}
+.btn-group p{
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+}
+.clan{
+    color: #00a2ff !important;
 }

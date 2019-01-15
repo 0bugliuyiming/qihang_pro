@@ -97,36 +97,56 @@
 </section>
 <div class="ptlogin-wrap">
     <div class="login-tab">
-        <a id="login_close" href="javascript:void(0);">
-            <i class="icon-font">
-            </i>
-        </a>
         <div class="enter-title">登陆账号</div>
         <div class="enter-content">
             <div class="content-avatar">
                 <div class="avatar-img"></div>
             </div>
             <div class="content-inputs">
-                <table>
-                    <tr>
-                        <th>用户名：</th>
-                        <td><input type="text" name="username"/></td>
-                    </tr>
-                    <tr>
-                        <th>密码：</th>
-                        <td><input type="password" name="password"/></td>
-                    </tr>
-                </table>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <input id="login_name" class="input-css" type="text" placeholder="用户名/手机号" name="login_name" />
+                    </div>
+                    <div class="form-group">
+                        <input id="login_password" class="input-css" type="password" placeholder="密码" name="login_password" />
+                        <span class="view_icon"></span>
+                    </div>
+                </form>
             </div>
             <div class="login-btn-wrap">
                 <a class="login-btn" href="javascript:void(0);">登陆</a>
             </div>
             <div class="links-wrap">
                 <a class="float-left" href="javascript:void(0);" target="_blank">忘记密码</a>
-                <a class="float-right" href="javascript:void(0);" target="_blank">立即注册</a>
+                <a id="to_sign_up" class="float-right" href="javascript:void(0);" target="_blank">立即注册</a>
                 <span class="float-right">没有账号？</span>
             </div>
         </div>
+    </div>
+    <div class="sign-up">
+        <form id="regForm">
+            <h2>注册账号</h2>
+            <div class="form-group">
+                <input id="reg_mobile" class="input-css" type="text" placeholder="手机号" name="mobile"/>
+            </div>
+            <div class="form-group">
+                <input id="reg_password" class="input-css" type="text" placeholder="密码" name="password"/>
+                <span class="view_icon"></span>
+            </div>
+            <div class="form-group">
+                <input id="reg_againPassword" class="input-css" type="password" placeholder="确认密码" name="againPassword"/>
+                <span class="view_icon"></span>
+            </div>
+            <div class="btn-group">
+                <button class="sign-up-btn" type="button">
+                    <span>注册</span>
+                </button>
+                <p class="font-login">
+                    已有账号？点此
+                    <a class="clan" href="javascript:void(0);">登陆</a>
+                </p>
+            </div>
+        </form>
     </div>
 </div>
 </body>
